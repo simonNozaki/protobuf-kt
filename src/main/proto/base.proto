@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+/**
+ * SNSスナップショット実績スキーマ
+ */
+message SnsSnapshotAchievement {
+  string name = 1;
+  // 発祥
+  string countryOfOrigin = 2;
+  // mau
+  int64  monthlyActiveUser = 3;
+  // average revenue per user
+  int64  arpu = 4;
+  // リリース
+  string launchedAt = 5;
+  string createdAt = 6;
+  string updatedAt = 7;
+}
